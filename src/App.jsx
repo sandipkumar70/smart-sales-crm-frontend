@@ -13,6 +13,7 @@ import Deals from "./pages/Deals";
 import Profile from "./pages/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MainLayout from "./layouts/MainLayout";
+import HistoricalData from "./pages/HistoricalData";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/historical" element={<HistoricalData />} />
+        
       </Route>
 
       <Route path="/" element={<Navigate to="/dashboard" replace />} />
